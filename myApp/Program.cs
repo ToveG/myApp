@@ -10,20 +10,21 @@ namespace myApp
     {
         static void Main(string[] args)
         {
+            HandelUserInput handleInput = new HandelUserInput();
             Console.WriteLine("Hej och välkommen. Var god välj en av följande val: 1, 2 eller 3");
             string userInput = Console.ReadLine();
 
             if (userInput == "1")
             {
-                Console.WriteLine("Kul att du valde nummer 1");
+                handleInput.respondToUserInput1(); 
             }
             else if (userInput == "2")
             {
-                Console.WriteLine("Tack för att du valde nummer 2.");
+                handleInput.respondToUserInput2();
             }
             else if (userInput == "3")
             {
-                Console.WriteLine("Number 3 it is.");
+                handleInput.respondToUserInput3();
             }
             else {
                 Console.WriteLine("Du har gjort ett felaktigt val.");

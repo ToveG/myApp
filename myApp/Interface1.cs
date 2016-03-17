@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace myApp
 {
-    class manageImput
+    public interface Interface1
     {
+        void method1();
+        void method2();
+        void method3();
     }
 }
