@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace myApp
 {
-    public interface Interface1
+    public interface IRespond
     {
-        void method1();
-        void method2();
-        void method3();
+        void respondToUserInput1();
+        void respondToUserInput2();
+        void respondToUserInput3();
     }
 }

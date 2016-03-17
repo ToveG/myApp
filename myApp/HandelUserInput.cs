@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace myApp
 {
-    class HandelUserInput
+    class HandelUserInput: IRespond
     {
         public void respondToUserInput1() {
             Console.WriteLine("Kul att du valde nummer 1");
         }
         public void respondToUserInput2()
         {
-            Console.WriteLine("Tack för att du valde nummer 2.");
+            Console.WriteLine("Yes nr2.");
         }
         public void respondToUserInput3()
         {

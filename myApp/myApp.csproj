@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HandelUserInput.cs" />
-    <Compile Include="Interface1.cs" />
+    <Compile Include="IRespond.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
