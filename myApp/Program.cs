@@ -12,16 +12,15 @@ namespace myApp
         {
             HandelUserInput handleInput = new HandelUserInput();
 
-
+            string userInput = "0";
             Console.WriteLine("Hej och välkommen.");
-            Console.WriteLine("Tryck enter för att starta. Vill du avsluta applikationen vänligen tryck 4.");
-            string input = Console.ReadLine();
-           
+            Console.WriteLine("Vill du avsluta applikationen vänligen tryck 4.");
 
-            while (input != "4")
+            while (userInput != "4")
             {
                 Console.WriteLine("Välj ett av följande val: 1, 2 eller 3.");
-                string userInput = Console.ReadLine();
+
+                userInput = Console.ReadLine();
 
                 if (userInput == "1")
                 {
@@ -35,10 +34,7 @@ namespace myApp
                 {
                     handleInput.respondToUserInput3();
                 }
-                else if (userInput == "4")
-                {
-                    return;
-                }
+           
                 else {
                     Console.WriteLine("Du har gjort ett felaktigt val.");
                 }
